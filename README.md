@@ -60,7 +60,7 @@ Thus, this API is designed abstractly to allow detection/configuration of the ev
      /****************************************************************************************************************** 
         Following methods have no relation with optional mask NEIPeekabooAutomaximizeNavigatorBar and NEIPeekabooAutomaximizeToolbar,
         but can used to instead of in conjuction with mask to expand or contract views to maximize space. Mask if provided,
-        allow you to not have to hide or show respetive controllers are, but provided, are maniuplated using standard
+        allow you to not have to hide or show respetive controllers yourself, but if provided it is maniuplated using standard
         show/hide navigation and toolbar methods.
      ******************************************************************************************************************/
     
