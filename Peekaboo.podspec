@@ -24,7 +24,7 @@ other UIViews you configure using optional delegate methods.
   s.homepage = "https://github.com/valerius/Peekaboo"
 # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license = 'MIT'
-  s.author = {"James Whitfield" => "ghost@neilab.com"}
+  s.author = {"James Whitfield" => "valerius@neilab.com"}
   s.source = {:git => "https://github.com/valerius/Peekaboo.git", :tag => s.version.to_s}
 # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
