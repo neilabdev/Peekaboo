@@ -1,10 +1,4 @@
-//
-//  NEIPeekabooSettingsPrivate.h
-//  Pods
-//
-//  Created by James Whitfield on 3/27/16.
-//
-//
+
 
 #ifndef NEIPeekabooSettingsPrivate_h
 #define NEIPeekabooSettingsPrivate_h

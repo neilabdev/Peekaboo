@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name = "Peekaboo"
-  s.version = "0.1.0"
+  s.version = "1.0.0"
   s.summary = "Peekaboo is an iOS API which allows you easily use a ScrollView to automatically hide the navigation and toolbar or other UIViews you configure."
 
 # This description is used to generate tags and improve search results.
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.homepage = "https://github.com/valerius/Peekaboo"
 # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license = 'MIT'
-  s.author = {"James Whitfield" => "jwhitfield@neilab.com"}
+  s.author = {"James Whitfield" => "ghost@neilab.com"}
   s.source = {:git => "https://github.com/valerius/Peekaboo.git", :tag => s.version.to_s}
 # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

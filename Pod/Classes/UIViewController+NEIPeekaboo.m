@@ -1,10 +1,4 @@
-//
-//  UIViewController+Peekaboo.m
-//  Pods
-//
-//  Created by James Whitfield on 3/27/16.
-//
-//
+
 
 #import "UIViewController+NEIPeekaboo.h"
 #import "objc/runtime.h"

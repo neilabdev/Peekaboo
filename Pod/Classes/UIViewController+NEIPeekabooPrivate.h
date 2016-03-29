@@ -1,10 +1,3 @@
-//
-//  UIViewController+NEIPeekabooPrivate.h
-//  Pods
-//
-//  Created by James Whitfield on 3/27/16.
-//
-//
 
 #ifndef UIViewController_NEIPeekabooPrivate_h
 #define UIViewController_NEIPeekabooPrivate_h
