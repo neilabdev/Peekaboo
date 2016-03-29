@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name = "Peekaboo"
-  s.version = "1.0.0"
+  s.version = "1.0.1"
   s.summary = "Peekaboo is an iOS API which allows you easily use a ScrollView to automatically hide the navigation and toolbar or other UIViews you configure."
 
 # This description is used to generate tags and improve search results.
@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description = <<-DESC
+  Peekaboo is an iOS API which allows you easily use a UIScrollView to automatically hide the navigation and toolbar or
+other UIViews you configure using optional delegate methods.
   DESC
 
   s.homepage = "https://github.com/valerius/Peekaboo"
