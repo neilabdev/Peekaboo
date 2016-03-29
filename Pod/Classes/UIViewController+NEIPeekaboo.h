@@ -1,10 +1,3 @@
-//
-//  UIViewController+Peakaboo.h
-//  Pods
-//
-//  Created by James Whitfield on 3/27/16.
-//
-//
 
 #import <UIKit/UIKit.h>
 #import "NEIPeekabooSettings.h"

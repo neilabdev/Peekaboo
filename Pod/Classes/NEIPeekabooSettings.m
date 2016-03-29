@@ -1,6 +1,4 @@
-//
-// Created by James Whitfield on 3/27/16.
-//
+
 
 #import "NEIPeekabooSettings.h"
 #import "NEIPeekabooSettingsPrivate.h"

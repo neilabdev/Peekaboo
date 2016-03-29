@@ -16,7 +16,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Peekaboo!";
-    self.navigationController.toolbarHidden = NO ;
     self.toolbarItems = @[[[UIBarButtonItem alloc] initWithTitle:@"Peekaboo!"
                                                            style:UIBarButtonItemStylePlain
                                                           target:self
@@ -27,8 +26,6 @@
                                    mask:NEIPeekabooAutomaximizeNavigatorBar | NEIPeekabooAutomaximizeToolbar
                                delegate:self];
 }
-
-
 
 #pragma mark - Actions
 

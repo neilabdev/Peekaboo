@@ -1,6 +1,3 @@
-//
-// Creeted by James Whitfield on 3/27/16.
-//
 
 #import <Foundation/Foundation.h>
 
