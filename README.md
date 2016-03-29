@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/Peekaboo.svg?style=flat)](http://cocoapods.org/pods/Peekaboo)
 
 
-![Alt Text](https://github.com/valerius/Peekaboo/raw/master/Resources/peekaboo_animation_md.gif)
+![Alt Text](Resources/peekaboo_animation_md.gif)
 
 ## About
 
