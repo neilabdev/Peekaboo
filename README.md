@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/Peekaboo.svg?style=flat)](http://cocoapods.org/pods/Peekaboo)
 [![Platform](https://img.shields.io/cocoapods/p/Peekaboo.svg?style=flat)](http://cocoapods.org/pods/Peekaboo)
 
+
+![Alt Text](https://github.com/{user}/{repo}/raw/master/Resources/peekabo_animation_md.gif)
+
 ## About
 
 Peekaboo is an iOS API which allows you easily use a UIScrollView to automatically hide the navigation and toolbar or
