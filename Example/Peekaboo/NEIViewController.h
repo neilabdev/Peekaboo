@@ -8,6 +8,8 @@
 
 @import UIKit;
 
-@interface NEIViewController : UIViewController
+#import <Peekaboo/Peekaboo.h>
 
+@interface NEIViewController : UIViewController <NEIPeekabooDelegate>
+@property(nonatomic,retain) IBOutlet UIWebView *webView;
 @end

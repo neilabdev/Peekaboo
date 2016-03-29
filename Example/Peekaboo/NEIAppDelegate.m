@@ -3,7 +3,7 @@
 //  Peekaboo
 //
 //  Created by James Whitfield on 03/27/2016.
-//  Copyright (c) 2016 James Whitfield. All rights reserved.
+//  Copyright (c) 2016 NEiLAB, LLC. All rights reserved.
 //
 
 #import "NEIAppDelegate.h"

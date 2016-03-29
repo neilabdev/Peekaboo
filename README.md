@@ -5,11 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/Peekaboo.svg?style=flat)](http://cocoapods.org/pods/Peekaboo)
 [![Platform](https://img.shields.io/cocoapods/p/Peekaboo.svg?style=flat)](http://cocoapods.org/pods/Peekaboo)
 
+## About
+
+Peekaboo is an iOS API which allows you easily use a UIScrollView to automatically hide the navigation and toolbar or
+other UIViews you configure using optional delegate methods.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -26,59 +29,53 @@ additional flexiablity using delegation. What makes its implementation different
 assumes little, and can hide navigation & toolbars in a standard way if you prefer, or allow you to perform the necessary 
 transitions in delegate methods in your own customized fashion without the need for subclasses. Its need arose as a result 
 of other API's doing 90% of what I needed, but because it was so custom required hacking the code to suite my usecase. 
-Thus, this API is designed abstractly to allow detection/configuration of the event triggered to notify you that the 
+Thus, this API is designed abstractly to allow detection/configuration of the event triggered via UIScrollView to notify you that the
 "viewport" should expand or contract, and nothing more. You do the rest as follows:
- 
-```objective-c
 
-    #import <Peekaboo/Peekaboo.h> // when not using CocoaPods
-    
-    @interface YourViewController : UIViewController <NEIPeekabooDelegate> //delegation is optional
+```objective-c
+    #import <Peekaboo/Peekaboo.h>
+
+    @interface YourViewController : UIViewController <NEIPeekabooDelegate>
     @end
-    
+
     @implementation YourViewController
     - (void) viewDidLoad {
         [super viewDidLoad];
-        [self enablePeekabooUsingScrollView:scrollView // any scrollView
-                                       mask:NEIPeekabooAutomaximizeNavigatorBar | NEIPeekabooAutomaximizeToolbar // defaults to none, whereby you can manage visiablity in delegate callbacks
+        [self enablePeekabooUsingScrollView:scrollView
+                                       mask:NEIPeekabooAutomaximizeNavigatorBar | NEIPeekabooAutomaximizeToolbar
                                    delegate:self];
 
-    }    
-    
-    
-    #pragma mark - PeekabooDelegate
-    
+    }
+
+    /******************************************************************************************************************
+        Following methods have no relation with optional mask NEIPeekabooAutomaximizeNavigatorBar and NEIPeekabooAutomaximizeToolbar,
+        but can used to instead of or in conjuction with mask to expand or contract views to maximize space. Mask if provided,
+        allow you to not have to hide or show respective controllers manually, but if provided, are maniuplated using standard
+        show/hide navigation and toolbar methods. If used, you must conform to NEIPeekabooDelegate protocol.
+     ******************************************************************************************************************/
+    #pragma mark - NEIPeekabooDelegate
+
     - (BOOL)peekabooViewportIsMaximized {
         // optional: you can use any logic to determine if its maximized, otherwise internal logic is used of not implemented
-        return self.navigationController.navigationBarHidden;     
+        return self.navigationController.navigationBarHidden;
     }
-    
-    - (BOOL)peekabooShouldAlterViewport:(id)scrollView maximized:(BOOL)maximized { 
+
+    - (BOOL)peekabooShouldAlterViewport:(id)scrollView maximized:(BOOL)maximized {
         return YES; //optional: always defaults to YES
     }
-    
-     /****************************************************************************************************************** 
-        Following methods have no relation with optional mask NEIPeekabooAutomaximizeNavigatorBar and NEIPeekabooAutomaximizeToolbar,
-        but can used to instead of in conjuction with mask to expand or contract views to maximize space. Mask if provided,
-        allow you to not have to hide or show respetive controllers yourself, but if provided it is maniuplated using standard
-        show/hide navigation and toolbar methods.
-     ******************************************************************************************************************/
-    
     - (void)peekabooWillAlterViewport:(id)scrollView maximized:(BOOL)maximized {
-        //optional: You can add your own code that will add/reduce available space. 
+        //optional: You can add your own code that will add/reduce available space.
     }
-    
+
     - (void)peekabooDidAlterViewport:(id)scrollView maximized:(BOOL)maximized {
         //optional: You can add your own code that will add/reduce available space.
     }
     @end
-``` 
-
-
+```
 
 ## Author
 
-James Whitfield, valerius@neilab.com
+James Whitfield, valerius (at) neilab.com
 
 ## License
 
