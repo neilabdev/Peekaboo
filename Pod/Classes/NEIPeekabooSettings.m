@@ -101,10 +101,10 @@
 
     if ((differenceFromStart) < 0) {
         // scroll up
-        if (scrollView.isTracking && (abs(differenceFromLast) > 1))
+        if (scrollView.isTracking && (abs((int)differenceFromLast) > 1))
             [self expandUsingScrollView:scrollView animated: _animated];
     } else {
-        if (scrollView.isTracking && (abs(differenceFromLast) > 1))
+        if (scrollView.isTracking && (abs((int)differenceFromLast) > 1))
             [self contractUsingScrollView:scrollView animated:_animated];
     }
 }
