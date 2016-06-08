@@ -28,6 +28,13 @@
     return self;
 }
 
+- (void)dealloc {
+    if(self.scrollView)
+        self.scrollView.delegate = nil;
+    self.scrollView = nil;
+    self.delegate = nil;
+}
+
 #pragma mark -
 
 - (UIScrollView *)scrollView {
