@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name = "Peekaboo"
-  s.version = "1.0.2"
+  s.version = "1.0.3"
   s.summary = "Peekaboo is an iOS API which allows you easily use a ScrollView to automatically hide the navigation and toolbar."
 
 # This description is used to generate tags and improve search results.

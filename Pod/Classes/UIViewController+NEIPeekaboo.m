@@ -13,6 +13,7 @@ static char objectPeekabooKey;
     } else {
         //delegate to hanler
     }
+  //  [[NEIPeekabooScrollViewDelegateProxy alloc] initWithPrimaryDelegate:delegate secondary:scrollView.delegate]
     self.peekaboo.delegate = delegate;
     self.peekaboo.scrollView = scrollView;
     self.peekaboo.automaximizeMask = mask;
