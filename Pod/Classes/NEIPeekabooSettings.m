@@ -7,6 +7,7 @@
 
 @interface NEIPeekabooSettings ()
 @property(nonatomic, readonly) BOOL maximized;
+@property (nonatomic,retain) NEIPeekabooScrollViewDelegateProxy *scrollViewDelegateProxy;
 @end
 
 @implementation NEIPeekabooSettings {
@@ -30,9 +31,10 @@
 
 - (void)dealloc {
     if(self.scrollView)
-        self.scrollView.delegate = nil;
+        self.scrollView.delegate = self.scrollViewDelegateProxy ? self.scrollViewDelegateProxy.secondary : nil;
     self.scrollView = nil;
     self.delegate = nil;
+    self.scrollViewDelegateProxy = nil;
 }
 
 #pragma mark -
@@ -43,7 +45,8 @@
 
 - (void)setScrollView:(UIScrollView *)scrollView {
     if(scrollView)
-        scrollView.delegate = self;
+        scrollView.delegate = self.scrollViewDelegateProxy = [[NEIPeekabooScrollViewDelegateProxy alloc] initWithPrimaryDelegate:self secondary:scrollView.delegate];
+
     _scrollView = scrollView;
 }
 
@@ -57,8 +60,10 @@
     if (self.maximized)
         return;
 
-    if ([self.delegate conformsToProtocol:@protocol(NEIPeekabooDelegate)]) if (![self.delegate respondsToSelector:@selector(peekabooShouldAlterViewport:maximized:)] ||
-            [self.delegate peekabooShouldAlterViewport:scrollView maximized:_maximized]) {
+    //if ([self.delegate conformsToProtocol:@protocol(NEIPeekabooDelegate)])
+    if ([self.delegate conformsToProtocol:@protocol(NEIPeekabooDelegate)] &&
+            (![self.delegate respondsToSelector:@selector(peekabooShouldAlterViewport:maximized:)] ||
+            [self.delegate peekabooShouldAlterViewport:scrollView maximized:_maximized])) {
         _maximized = YES;
         if ([self.delegate respondsToSelector:@selector(peekabooWillAlterViewport:maximized:)])
             [self.delegate peekabooWillAlterViewport:scrollView maximized:_maximized];
