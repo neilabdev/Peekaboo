@@ -2,6 +2,7 @@
 
 #import <Foundation/Foundation.h>
 #import "NEIPeekabooDelegate.h"
+#import "NEIPeekabooScrollViewDelegateProxy.h"
 
 
 typedef NS_ENUM(NSInteger, NEIPeekabooAutomaximizeMask) {
