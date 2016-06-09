@@ -4,7 +4,7 @@
 
 #import "NEIPeekabooScrollViewDelegateProxy.h"
 
-
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 @implementation NEIPeekabooScrollViewDelegateProxy {
     id <UIScrollViewDelegate> _primary;
     id <UIScrollViewDelegate> _secondary;
