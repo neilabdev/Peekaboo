@@ -32,9 +32,6 @@ other UIViews you configure using optional delegate methods.
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-      'Peekaboo' => ['Pod/Assets/*.png']
-  }
 
   s.public_header_files = 'Pod/Classes/**/*.h'
   s.private_header_files = 'Pod/Classes/**/*Private.h'
