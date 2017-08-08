@@ -1,6 +1,6 @@
 # Peekaboo
 
-[![CI Status](http://img.shields.io/travis/James Whitfield/Peekaboo.svg?style=flat)](https://travis-ci.org/James Whitfield/Peekaboo)
+[![CI Status](http://img.shields.io/travis/ghost/Peekaboo.svg?style=flat)](https://travis-ci.org/ghost/Peekaboo)
 [![Version](https://img.shields.io/cocoapods/v/Peekaboo.svg?style=flat)](http://cocoapods.org/pods/Peekaboo)
 [![License](https://img.shields.io/cocoapods/l/Peekaboo.svg?style=flat)](http://cocoapods.org/pods/Peekaboo)
 [![Platform](https://img.shields.io/cocoapods/p/Peekaboo.svg?style=flat)](http://cocoapods.org/pods/Peekaboo)
