@@ -75,7 +75,7 @@ Thus, this API is designed abstractly to allow detection/configuration of the ev
 
 ## Author
 
-James Whitfield, valerius (at) neilab.com
+GHOST, ghost (at) neilab.com
 
 ## License
 
