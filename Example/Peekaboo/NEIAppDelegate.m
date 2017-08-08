@@ -2,7 +2,7 @@
 //  NEIAppDelegate.m
 //  Peekaboo
 //
-//  Created by James Whitfield on 03/27/2016.
+//  Created by ghost on 03/27/2016.
 //  Copyright (c) 2016 NEiLAB, LLC. All rights reserved.
 //
 

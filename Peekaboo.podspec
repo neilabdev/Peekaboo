@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 other UIViews you configure using optional delegate methods.
   DESC
 
-  s.homepage = "https://github.com/valerius/Peekaboo"
+  s.homepage = "https://github.com/neilabdev/Peekaboo"
 # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license = 'MIT'
-  s.author = {"James Whitfield" => "valerius@neilab.com"}
-  s.source = {:git => "https://github.com/valerius/Peekaboo.git", :tag => s.version.to_s}
+  s.author = {"GHOST" => "ghost@neilab.com"}
+  s.source = {:git => "https://github.com/neilabdev/Peekaboo.git", :tag => s.version.to_s}
 # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform = :ios, '7.0'
