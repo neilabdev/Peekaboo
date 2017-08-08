@@ -1,6 +1,3 @@
-//
-// Created by James Whitfield on 6/9/16.
-//
 
 #import "NEIPeekabooScrollViewDelegateProxy.h"
 
